@@ -7,4 +7,8 @@ for i in a:
         dicti[i]+=1
     else:
         dicti[i]=1
-print(dicti)
+c=max(dicti.values())
+for j in dicti:
+    if dicti[j]==c:
+        print(j)
+print(c)

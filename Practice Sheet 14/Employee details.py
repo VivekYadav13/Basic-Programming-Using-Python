@@ -1,4 +1,4 @@
-"Write a Python class Employee with attributes like emp_id, emp_name, emp_salary,
+'''Write a Python class Employee with attributes like emp_id, emp_name, emp_salary,
 and emp_department and methods like calculate_emp_salary,
 emp_assign_department, and print_employee_details.
 Sample Employee Data:
@@ -13,7 +13,7 @@ hours_worked, which is the number of hours worked by the employee. If the
 number of hours worked is more than 50, the method computes overtime and
 adds it to the salary. Overtime is calculated as following formula:
 overtime = hours_worked - 50
-Overtime amount = (overtime * (salary / 50))"
+Overtime amount = (overtime * (salary / 50))'''
 class Employee:
     emp_id=0
     emp_name=''
@@ -36,10 +36,11 @@ class Employee:
         self.emp_department=dep
         return self.emp_department
     def print_employee_details(self):
-        return self.emp_id, self.emp_name, self.emp_salary, self.emp_department
+        print(f'Employee ID ={self.emp_id} \nEmployee Name ={self.emp_name} \nEmployee Salary ={self.emp_salary} \nEmployee department{self.emp_department}')
 e1=Employee(int(input('Enter Employee_Id =')),input('Entre Employee Name ='),int(input('Employee salary =')),input('Employee department ='),int(input('Hours worked =')))
 print(e1.print_employee_details())
 print(e1.calculate_emp_salary(int(input('Salary =')),int(input('Hours worked ='))))
-print(e1.emp_assign_department(input('Enter department to assign =')))
+print(e1.emp_assign_department(input('Enter New department to assign =')))
 print(e1.print_employee_details())
+
 

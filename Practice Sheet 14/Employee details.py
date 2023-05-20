@@ -37,7 +37,7 @@ class Employee:
         return self.emp_department
     def print_employee_details(self):
         return self.emp_id, self.emp_name, self.emp_salary, self.emp_department
-e1=Employee(int(input('Entre Employee_Id =')),input('Entre Employee Name ='),int(input('Employee salary =')),input('Employee department ='),int(input('Hours worked =')))
+e1=Employee(int(input('Enter Employee_Id =')),input('Entre Employee Name ='),int(input('Employee salary =')),input('Employee department ='),int(input('Hours worked =')))
 print(e1.print_employee_details())
 print(e1.calculate_emp_salary(int(input('Salary =')),int(input('Hours worked ='))))
 print(e1.emp_assign_department(input('Enter department to assign =')))
